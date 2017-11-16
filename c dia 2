@@ -19,10 +19,9 @@ int main (){
     return 0;
 }
 //  las ryaas de out va pa la izq  
-    
+//  n\n\n para que la sol aparezca em la linea 3  
 //  teoria: errores sintacticos x escibir mal algo
 // errores de concepto, de programació, el programa está bien escruto pero no hace lo q yo quiero   
     
     
-    
-    
+  
