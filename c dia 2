@@ -1,0 +1,28 @@
+#include<iostream>
+
+int main (){
+//  es es un comentario
+//definicion de variable
+//definicion de varibles// 
+    int a;
+    int b;
+    int c;
+    int solucionar,salir;
+//  inicializando variables   
+    a=2;
+    b=4;
+    c=-1;
+    solucionar=a+b+c;
+    std::cout<<"LA SOLUCION ES"<< solucionar << std::endl;
+    std::cout<<"para seguir toca cualquier tecla"; 
+    std::cin>>salir; 
+    return 0;
+}
+//  las ryaas de out va pa la izq  
+    
+//  teoria: errores sintacticos x escibir mal algo
+// errores de concepto, de programació, el programa está bien escruto pero no hace lo q yo quiero   
+    
+    
+    
+    
