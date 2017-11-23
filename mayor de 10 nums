@@ -1,0 +1,33 @@
+// que lea 10 numeros y me devuelva el mayor cn bucle 
+#include<iostream>
+int main (){
+//    definicion de variables
+      int cont;
+      int numero;
+      int mayor;
+      int salir;
+//    bucle tipo for              cont=cont+1   cont++
+// for (cont=10;cont>=0;cont--){
+       mayor=0;
+      for(cont=1;cont<=10;cont++){
+            std::cout<<"dime un num entero:" ;
+            std::cin>>numero;
+            if(numero>mayor){
+                             mayor=numero;
+      
+                             }       
+                             
+                             }
+                             
+      std::cout<<"el mayor es:  "<<mayor;
+      std::cout<<"toca cualquier tecla";
+      std::cin>>salir;
+      return 0;
+  
+            
+  
+            }
+    
+    
+    
+    
