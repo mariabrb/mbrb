@@ -1,0 +1,24 @@
+using namespace std;
+#include<iostream>
+// vamos a hacer arrays listas no variables
+//q muestre 5 nums enteros 
+
+int main(){
+    int salir;
+    int vector[5];
+    int cont;
+    cout<<"mira mi vector:  ";
+    for(cont=0;cont<5;cont++){
+                              cout<<"dime un numero:  ";
+                              cin>>vector[cont];
+          
+    
+}
+for(cont=0;cont<5;cont++){
+                              cout<<"vector["<<cont<<"]="<<vector[cont];
+                              }
+    std::cout<<"toca cualquier tecla para salir/n";
+    std::cin>>salir;
+    return 0;
+    
+}
