@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int salir;
+    int num,contador=1;
+    cout<<"escribe un numero:";
+    cin>>num;  
+ 
+    while(num/10>0)
+    {
+        num=num/10;
+        contador++;
+    }
+    cout<<"Tiene "<<contador<<" caracteres";
+    cout<<"\ntoca cualquier tecla para salir\n";
+    
+    
+    
+    cin>>salir;
+    return 0;
+
+}
