@@ -1,0 +1,61 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int salir;
+    int opcion;
+    int num,contador=1,pos;
+    cout<<"escribe un numero:";
+    cin>>num;  
+        while(num/10>0)
+    {
+        num=num/10;
+        contador++;
+    }
+        int vector[contador];
+        int base =10;
+       for(pos=0;pos<contador;pos++){
+    {
+    int elevado=pow(base , pos)    
+      vector[pos]=num % elevado;   
+                     
+       cout<< vector[pos];
+    }
+}
+    cout<<"menu\n";
+cout<<"1. Devuelve la suma de sus cifras pares\n";
+cout<<"2. Devuelve la suma de sus cifras impares\n";
+cout<<"3. Devuelve la mayor de sus cifras\n";
+cout<<"4. Devuelve un número con las mismas cifras ordenadas de menor a mayor\n";
+ cin>>opcion;
+ switch(opcion) //donde opción es la variable a comparar
+{
+	case 1: 
+         
+	break;
+	case 2: 
+         
+	break;
+	case 3: 
+         
+	break;
+	case 4: 
+         
+	break;
+	//Nótese que valor 1 2 y 3 son los valores que puede tomar la opción
+	//la instrucción break es necesaria, para no ejecutar todos los casos.
+	default:
+
+ 
+
+    cout<<"Tiene "<<contador<<" caracteres";
+    cout<<"\ntoca cualquier tecla para salir\n";
+    
+
+    
+    cin>>salir;
+    return 0;
+
+}
+}
