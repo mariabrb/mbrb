@@ -1,0 +1,17 @@
+// FICHEROS 
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+int main(){
+    // abrimos el fichero
+    ofstream fichero("mifichero.txt");
+    fichero<<"En un lugar de la cabeza de antonio"<<endl;
+    fichero<<"pero que mierda estoy haciendo";
+    fichero.close();
+    cout<<"ya esta.ficahero cerrado";
+    
+    
+    return 0;
+}
