@@ -1,0 +1,24 @@
+//FICHEROS LEER LINEAS 
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int salir;
+int main(){
+  ifstream fichero("mifichero.txt");
+  string mensaje;//para escribir una linea
+  cout<<"el texto dice: ";
+ 
+                          for (int nlinea=1;nlinea<=4;nlinea++){
+                          getline(fichero,mensaje);//para escribir una linea, de donde lo saco a donde lo meto
+   
+          
+          
+          cout<<mensaje;
+          cout<<endl;
+                       }
+                       
+  cin>>salir;
+  
+ 
+}
