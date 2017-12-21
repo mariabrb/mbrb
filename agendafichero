@@ -1,0 +1,26 @@
+//guardar nombres y contactos
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+    char otro='s'; //siempre dentro del while hasta q le digas salir
+    string nombre;
+    string numero;
+    ifstream agenda("ficheroaenda.txt");                                         //  agenda es lo mismo que fichero
+              // no pongo int porque es un numero mas largo asi que lo pongo como string
+    // estas lineas de arriba reservan  memoria
+    while(salir=='s'){
+                      cout<< "Nombre:  ";
+                      cin>>nombre;
+                      cout<<"numero: ";
+                      cin>>numero;
+                      agenda<<nombre<<","<<numero<<endl;
+
+                      cout<<"deseas introducir otro amigo(s/n)"
+                 cin>>otro;
+                                    
+                      }
+    return 0;
+}
+  //uede preguntar:
+//omo se  un buvle con ubna variale interruptora, es nb whule donde leo una variable y depediendo de su valor me quedo o me voy
