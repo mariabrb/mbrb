@@ -1,0 +1,21 @@
+// va a leer un fichero ya existente hasta el final
+// lectura hasta el final
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main(){
+    string linea; //variable     //ifstream es para sacar datos y ofstream es para meter datos 
+    int salir;
+    ifstream fichero("mifichero.txt"); // abre el fichero y lo vuelca,solo lo lee; el ifstream; reserva un trozo de la memoria dimanica, lo lee del sico duro y lo escribe en la meoria diamica que es la ram,, cuando aapgamos el ordenador la ram se pierde
+    //el comando ifstream busca la ruta qeu yo ponga ahi, tiene que ser una ruta real, si no pongo el c:/ va al directorio raiz, al escritorio
+    // getline es la instrucción para leer line a linea 
+    while(fichero.eof()==0){ //eof es la ultima linea
+    getline(fichero,linea);
+    cout<<linea<<endl;
+}
+    fichero.close(); 
+    cin>>salir;
+    return 0;
+
+}
