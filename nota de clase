@@ -1,0 +1,13 @@
+estructuras
+int x
+char letra
+floar num decimal
+int x[10] , son 10 posiciones de memorias, es una ray, un vector
+string es un vector de char , un vecto de letras
+char letra[10]
+para guardar datos disntitos, la edad y nombre de una persona, hay que usar una estructura, es como una ray, como un vectr, pero en vez de tneer caracterfes iguales son distintos
+struct{ string nombre;
+	int edad;
+		}persona;
+persona.nombre="pepito";
+persona.edad=18;
