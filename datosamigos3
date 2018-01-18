@@ -1,0 +1,48 @@
+     //  struct {
+   //    string nombre;
+ //      input edad;
+//  }pepito;
+  //pepito.edad=17;
+  //pepito.nombre="jose";
+
+
+
+
+//  struct persona{
+    //   sttring nombre;                   # la clave es que reserva espacio para las varibles en la ram 
+     //  input edad;                   #los corchetes son opara hacer lo mismno varias veces ejemplo: persona amigo[10]
+ //  };
+ //  persona amigo1;       #es una declarción. Va a la ram y asgina espacio al nombre y la edad y a eta variable lallama amigo1 
+//este programa trata sobre estructuras
+#include<iostream>
+using namespace std;
+
+int main(){
+    int cont;
+    int salir;
+    //declaro un nuevo tipo de dato
+ struct persona{
+        string nombre;
+        int edad;
+        string colordepelo;
+        };
+        //declarouna variable de tipo persona
+        persona amigo[3];
+        for(cont=0;cont<3;cont++){
+          cout<<"datos amigo "<<cont<<endl;
+          cout<<"como se llama tu amigo";
+          cin>>amigo[cont].nombre;
+          cout<<"cuantos años tiene: ";
+          cin>>amigo[cont].edad;
+          cout<<"De que color tiene pelo";
+          cin>>amigo[cont].colordepelo;
+        }
+        cout<<amigo[1].nombre;
+        cout<<"toca cualquier tecla pa salir";
+        
+        cin>>salir;
+        }
+                                  
+                                  
+                                  
+        
