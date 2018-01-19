@@ -1,0 +1,38 @@
+// mostrar un menu escoalar, definir una estructura para guardar estos datos 
+#include<iostream>
+using namespace std;
+int main(){
+    
+    struct menu{
+           string primero;
+           string segundo;
+           string postre;
+           int calorias;
+    };
+    int suma=0;
+    int cont;  
+    int salir;
+    string diasSemana[]={"LUNES","MARTES","MIERCOLES","JUEVES","VIERNES", "SABADO","DOMINGO"};
+    menu m[7];
+        for(cont=0;cont<7;cont++){
+          cout<<"Menu del "<<diasSemana[cont]<<":"<<endl;
+          cout<<"PRIMER PLATO: "<<endl;
+          cin>>m[cont].primero;
+          cout<<"SEGUNDO PLATO: "<<endl;
+          cin>>m[cont].segundo;
+          cout<<"POSTRE: "<<endl;
+          cin>>m[cont].postre;
+          cout<<"¿Cuantas calorias tiene su comida?"<<endl;
+          cin>>m[cont].calorias;
+        }
+        for(cont=0;cont<7;cont++){
+          cout<<"Kilocalorias del "<<diasSemana[cont]<<": "<<m[cont].calorias<<endl;
+          cout<<"Kilocalorias totales: "<<endl;
+          cout<<suma<<" kcal + "<< m[cont].calorias<<" kcal = ";
+          suma=suma+m[cont].calorias;
+          cout<<suma;
+          }
+        cout<<"CALORIAS TOTALES DE LA SEMANA: "<<suma<<endl;
+    cin>>salir;
+    return 0;
+}
