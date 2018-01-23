@@ -1,0 +1,28 @@
+// progrmas sobre manejo  de memoria
+//  #include<iostream>
+ ///  using namespace std;
+   // int main(){
+  //  int x=3;
+  //  int salir;
+  //  cout<<"x= "<<x;
+ //   cin>>salir;   
+    
+   // }
+
+
+#include<stdio.h>
+int main(){
+//int x=3;
+//int hermanos=3;
+//int hermanas=2;
+int a=3;
+int b=2;
+int salir;
+//printf ("%x",&a);  //aspersan indica la dirección de memoria de A, un numero hexadecimal
+//  printf("tengo %i hermanas y %i hermanos",hermanas,hermanos);
+//  printf("x=%i",x);   //%i numero enter   %c char
+//scanf("%c",&salir);      //sacnf es el cin de la prehistoria
+  printf("direccion de a= %x\n",&a);
+  printf("direccion de b= %x",&b);
+  scanf("%c",&salir);
+         }
