@@ -1,0 +1,43 @@
+// progrmas sobre manejo  de memoria
+//  #include<iostream>
+ ///  using namespace std;
+   // int main(){
+  //  int x=3;
+  //  int salir;
+  //  cout<<"x= "<<x;
+ //   cin>>salir;   
+    
+   // }
+
+
+#include<stdio.h>
+int main(){
+//int x=3;
+//int hermanos=3;
+//int hermanas=2;
+char palabra1[5];
+char palabra2[5];
+printf("dime algo ");
+scanf("%s",palabra1);
+printf("dime algo mas ");
+scanf("%s",palabra2);
+printf("dirección palabra1= %x ",palabra1);
+//char a=3.1;
+//char b=2.1;
+int salir;
+//printf ("%x",&a);  //aspersan indica la dirección de memoria de A, un numero hexadecimal
+//  printf("tengo %i hermanas y %i hermanos",hermanas,hermanos);
+//  printf("x=%i",x);   //%i numero enter   %c char
+//scanf("%c",&salir);      //sacnf es el cin de la prehistoria
+  //printf("direccion de a= %x\n",&a);
+  //printf("direccion de b= %x",&b);
+  printf("palabra1 = %s\n",palabra1);
+  printf ("palabra2 = %s",palabra2);
+  scanf("%i",&salir);
+         }
+
+
+//como se guarda un float y un int : 1 byte=8bits  se empieza por 1 si es negativo y 0 si es positivo
+// el float se guarda como un tblero de ajedrez 
+// para poder odificar una letra necesitas 1 byte, para un nombre (6letras) = 6  1=6 bytes
+// 
