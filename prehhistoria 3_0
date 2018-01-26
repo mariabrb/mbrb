@@ -15,7 +15,7 @@ int main(){
 //int x=3;
 //int hermanos=3;
 //int hermanas=2;
-char palabra1[10];
+char palabra1[10];            //s letra y c todas las letras a partir de una posicion
 char palabra2[10];
 int salir;
 printf("dime algo ");
