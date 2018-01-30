@@ -1,0 +1,12 @@
+//manejo de punteros
+#include<stdio.h>
+int main(){
+ char *lista[3];    //malloc()-- memory allocation--BUSCA EL HUECO Q NECESITA PA GUARDAR LA PALABRA
+ lista[0]=(char*)malloc(8*sizeof(char));
+  lista[1]=(char*)malloc(7*sizeof(char));  // el char * obliga a que meta  en ese sitio el numero q buscamos 
+   lista[2]=(char*)malloc(9*sizeof(char));           
+    
+    
+    
+    
+}
