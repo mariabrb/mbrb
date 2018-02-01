@@ -1,0 +1,26 @@
+//manejo de punteros
+#include<stdio.h>
+#include<stdlib.h> //liberia en la q está malloc
+int main(){
+    int salir;
+ char *lista[3];    //malloc()-- memory allocation--BUSCA EL HUECO Q NECESITA PA GUARDAR LA PALABRA
+ lista[0]=(char*)malloc(8*sizeof(char));
+  lista[1]=(char*)malloc(7*sizeof(char));  // el char * obliga a que meta  en ese sitio el numero q buscamos 
+   lista[2]=(char*)malloc(9*sizeof(char));
+   printf("\nPrimer rey mago ");
+   scanf("%s", lista[0]);// LEE UNA CADENA DE CARACTERES Y GARDALA SEFUN LA POSICIÓN DE MEMORIA
+   printf("\nSegundo rey mago ");
+   scanf("%s", lista[1]);         
+   printf("\ntercer rey mago ");
+   scanf("%s", lista[2]); // equivalente a cin, BUFFER DE TECLAdo
+   printf("\nLOS 3 REYES MAGOS SON: ");
+   printf("%s",lista[0]);
+   printf("\n%s",lista[1]);
+   printf("\n%s",lista[2]);
+   printf("\ntoca cualquier tecla");
+   scanf("%i",&salir);
+   
+    
+    // buffer del teclado
+    
+}
