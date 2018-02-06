@@ -1,0 +1,47 @@
+//Manejo de punteros
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int medida(char aux[]){
+    int l=0;
+    while(aux[l]!='\0'){//el whil es para que vaya contando hasta qeu llegue al fianl de la cadena 
+    l++;
+            }
+            return 1;
+}
+
+int main(){
+     char *lista[5];
+     int salir;
+     char aux[15];
+     int cont;
+     char *pauxiliar;
+     int l;
+     for(cont=0;cont<5;cont++){
+         printf("\nNombre amigo %i: ",cont);
+         scanf("%s",aux);  
+        l=medida(aux);
+        printf("%i\n",l);
+         lista[cont]=(char *) malloc(l*sizeof(char)); // malloc asigna solo el eespcaioo q necesita
+         strcpy(lista[cont],aux);
+     }
+     for(cont=0;cont<5;cont++){
+                   printf("\n%s",lista[cont]);            
+                               
+                               }
+                               //ordenamiento
+                               for(cont=0;cont<5;cont++){
+                                                         if(*lista[cont]>*lista[cont+1]) 
+                                                      pauxiliar=lista[cont];
+                                                      lista[cont]=lista[cont+1];
+                                                      lista[cont+1]=pauxiliar;  
+                                                         }
+                                                         }
+                                                         //despues del ordenamiebnto
+                                                         printf("\nlista ordenada:");
+                                                         for(cont=0;cont<5;cont++){
+                   printf("\n%s",lista[cont]);    
+     printf("\nToca cualquier tecla: ");
+     scanf("%i",&salir);
+}
